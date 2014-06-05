@@ -1,0 +1,105 @@
+extends layout/default.jade
+
+block head  
+	title Chronos
+	+css("../build/css/chronos.css")
+	
+block content  
+	.container
+		nav.nav
+			.nav-item.title Chronos
+			section.nav-item.tabs
+				a.tab.active Pinboard
+				a.tab Canlender
+				a.tab Friends
+				a.tab Messages
+		section.post
+			.mask-area
+				.love
+					span.heart
+					span.like-count 100023
+				.title Roadtrip on Highway One
+				.date 26 January - 1 February
+			.avatars
+				img.avatar
+				img.avatar
+				img.avatar
+			.featured
+				.title FEATURED
+				ul.feature-list
+					li.feature 
+						a Blog Post
+					li.feature.active 
+						a Event
+					li.feature 
+						a Photo
+					li.feature 
+						a Music
+					li.feature 
+						a Video
+			.message-box
+				.nav-area
+					span INBOX(8) / 
+					span SENT
+				ul.messages
+					li.message
+						.avatar
+						.txt
+							.title James Coleman
+							.content Are you comming to the Roadship?
+					li.message
+						.avatar
+						.txt
+							.title James Coleman
+							.content Are you comming to the Roadship?
+					li.message
+						.avatar
+						.txt
+							.title James Coleman
+							.content Are you comming to the Roadship?
+		section.content
+			.header
+				.title Your Pinboard
+				.sorting-area
+					span.sort-title SORT BY
+					.sort-items
+						.cycle.cycle-red
+						.cycle.cycle-orange
+						.cycle.cycle-blue
+						.cycle.cycle-green
+			.board
+				.cards
+					.card
+						.like-area
+							span.heart
+							span.like-count 1001
+						.cycle.cycle-orange
+						p.txt Everything is so cool around
+					.card
+					.card
+					.card
+					.card
+					.card
+					.card
+					.card
+					.card
+					.card
+				.panel
+					.pot
+						.pot-big <
+					.pot
+						.pot-normal 1
+					.pot
+						.pot-small
+					.pot
+						.pot-normal 3
+					.pot
+						.pot-primary 4 January
+					.pot
+						.pot-normal 5
+					.pot
+						.pot-small
+					.pot
+						.pot-normal 7
+					.pot
+						.pot-big >
