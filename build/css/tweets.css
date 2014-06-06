@@ -28,7 +28,7 @@ li {
   box-sizing: border-box;
   background-color: #fffbf5;
   border: 1px solid #f2eee8;
-  color: 605 e58;
+  color: #605e58;
 }
 .nav .write {
   float: left;
@@ -175,6 +175,7 @@ section.right .trends-area .title {
   margin-bottom: 10px;
 }
 section.right .trends-area .trend {
+  font-size: 18px;
   color: #80a8cc;
   padding: 3px 0px;
   margin: 0px;
