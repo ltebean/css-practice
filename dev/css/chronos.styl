@@ -9,6 +9,15 @@ body
 li
 	list-style:none
 
+button
+	color:#f37c5f
+	width:26px
+	height:26px
+	font-weight:500
+	background-color:#ffffff
+	border:2px solid #f37c5f
+	border-radius:15px
+
 .heart:before
 	position: absolute; 
 	content: ""; 
@@ -63,6 +72,7 @@ li
 	background:white
 	border-top-left-radius: 8px
 	border-top-right-radius: 8px
+	position:relative
 	.nav-item
 		float:left
 		height:100%
@@ -74,8 +84,7 @@ li
 		margin-left:100px
 		.tab
 			font-size:16px
-			display:block
-			float:left
+			display:inline-block
 			width:120px
 			text-align:center
 		.active
@@ -84,7 +93,11 @@ li
 		a:hover
 			background-color:#5db0c6
 			color:white
-
+	.add-btn
+		display:inline-block
+		position:absolute
+		right:27px
+		top:27px
 
 .post
 	position:relative
@@ -145,11 +158,19 @@ li
 		position:absolute
 		width:360px
 		height:280px
-		top:40px
+		top:26px
 		right:200px
 		background-color:#ffffff
 		border-radius:10px
 		box-shadow: rgba(80,80,80,0.5) 0 0 10px
+		.angle
+			position:absolute
+			left:56px
+			top:-8px
+			width: 16px; 
+			height: 16px; 
+			background: #ffffff; /* assign a nice red color */
+			-webkit-transform: rotate(45deg); /* rotating 45 degrees clockwise */
 		.nav-area
 			height:50px
 			border-bottom:1px solid #e0e6e7
