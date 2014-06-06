@@ -5,67 +5,90 @@ block head
 	+css("../build/css/tweets.css")
 	
 block content 
-	nav.nav
-		.write
-			.btn.btn-primary
-		.btn
-		.btn
-	.container
-		section.left
-			.profile
-				image.avatar(src="../build/img/avatar.jpg")
-				.name Kerem Suer
-				p.intro This is an introduction to Kerem Suer, don't mind the content here
-				a.website www.kerem.container
-				a.follow-btn Follow
-			.pics
-				image(src="../build/img/side.jpg")
-		section.main
-			.tabs
-				.tab.active
-					.title TWEETS
-					.count 200
-				.tab
-					.title PHOTO/VIDEOS
-					.count 200
-				.tab
-					.title FOLLOWING
-					.count 200
-				.tab
-					.title FOLLOWERS
-					.count 200
-			.tweets
-				.tweet
-					.aside
-						image.avatar(src="../build/img/avatar.jpg")
-					.content
-						.head
-							span.name Kerem Suer
-							span.at @Kerem
-						p.txt
-							|this is tweet, don't mind what it is about 
-							|this is tweet, don't mind what it is about blabla ,
-							|this is tweet, don't mind what it is about
-							|this is tweet, don't mind what it is about
-				.tweet
-					.aside
-						image.avatar(src="../build/img/avatar.jpg")
-					.content
-						.head
-							span.name Kerem Suer
-							span.at @Kerem
-						.pic
-							image(src="../build/img/tweet.jpg")
-				.tweet haha
-				.tweet haha
-		section.right
-			.trends-area
-				.title PHILIPINES TRENDS
-				ul.trends-list
-					li.trend #a5WordsForYoubla
-					li.trend #a5WordsForYou
-					li.trend #a5WordsForYoublabla
-					li.trend #a5WordsForYou
-					li.trend #a5WordsForYouoh
-					li.trend #a5WordsForYou
-		
+	.wrap
+		nav.nav
+			.write
+				.btn.btn-primary
+			.btn
+			.btn
+		.container
+			section.left
+				.profile
+					image.avatar(src="../build/img/avatar.jpg")
+					.name Kerem Suer
+					p.intro This is an introduction to Kerem Suer, don't mind the content here
+					a.website www.kerem.container
+					a.follow-btn Follow
+				.pics
+					image(src="../build/img/side.jpg")
+			section.main
+				.tabs
+					.tab.active
+						.title TWEETS
+						.count 200
+					.tab
+						.title PHOTO/VIDEOS
+						.count 200
+					.tab
+						.title FOLLOWING
+						.count 200
+					.tab
+						.title FOLLOWERS
+						.count 200
+				.tweets
+					.tweet
+						.aside
+							image.avatar(src="../build/img/avatar.jpg")
+						.content
+							.head
+								span.name Kerem Suer
+								span.at @Kerem
+							p.txt
+								|this is tweet, don't mind what it is about 
+								|this is tweet, don't mind what it is about blabla ,
+								|this is tweet, don't mind what it is about
+								|this is tweet, don't mind what it is about
+					.tweet
+						.aside
+							image.avatar(src="../build/img/avatar.jpg")
+						.content
+							.head
+								span.name Kerem Suer
+								span.at @Kerem
+							.pic
+								image(src="../build/img/tweet.jpg")
+					.tweet
+						.aside
+							image.avatar(src="../build/img/avatar.jpg")
+						.content
+							.head
+								span.name Kerem Suer
+								span.at @Kerem
+							p.txt
+								|this is tweet, don't mind what it is about 
+								|this is tweet, don't mind what it is about blabla ,
+								|this is tweet, don't mind what it is about
+								|this is tweet, don't mind what it is about
+					.tweet
+						.aside
+							image.avatar(src="../build/img/avatar.jpg")
+						.content
+							.head
+								span.name Kerem Suer
+								span.at @Kerem
+							p.txt
+								|this is tweet, don't mind what it is about 
+								|this is tweet, don't mind what it is about blabla ,
+								|this is tweet, don't mind what it is about
+								|this is tweet, don't mind what it is about
+			section.right
+				.trends-area
+					.title PHILIPINES TRENDS
+					ul.trends-list
+						li.trend #a5WordsForYoubla
+						li.trend #a5WordsForYou
+						li.trend #a5WordsForYoublabla
+						li.trend #a5WordsForYou
+						li.trend #a5WordsForYouoh
+						li.trend #a5WordsForYou
+			
