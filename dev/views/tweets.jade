@@ -11,6 +11,8 @@ block content
 				.btn.btn-primary
 			.btn
 			.btn
+			image.twitter(src="../build/img/twitter.png")
+			input.search(type="text" placeholder="Search")
 		.container
 			section.left
 				.profile
@@ -34,7 +36,7 @@ block content
 						.count 200
 					.tab
 						.title FOLLOWERS
-						.count 200
+						.count 1M
 				.tweets
 					.tweet
 						.aside
@@ -78,9 +80,15 @@ block content
 								span.at @Kerem
 							p.txt
 								|this is tweet, don't mind what it is about 
-								|this is tweet, don't mind what it is about blabla ,
-								|this is tweet, don't mind what it is about
-								|this is tweet, don't mind what it is about
+					.tweet
+						.aside
+							image.avatar(src="../build/img/avatar.jpg")
+						.content
+							.head
+								span.name Kerem Suer
+								span.at @Kerem
+							.pic
+								image(src="../build/img/tweet.jpg")
 			section.right
 				.trends-area
 					.title PHILIPINES TRENDS
@@ -91,4 +99,43 @@ block content
 						li.trend #a5WordsForYou
 						li.trend #a5WordsForYouoh
 						li.trend #a5WordsForYou
-			
+						li.trend #a5WordsForYoublabla
+						li.trend #a5WordsForYou
+						li.trend #a5WordsForYouoh
+						li.trend #a5WordsForYou
+				.who-to-follow
+					.title WHO TO FOLLOW
+					ul.person-list
+						li.person
+							.aside
+								image.avatar(src="../build/img/avatar.jpg")
+							.content
+								.name Chris Sponner
+								.career Designer Blogger
+							.operation
+								a.follow-btn +
+						li.person
+							.aside
+								image.avatar(src="../build/img/avatar.jpg")
+							.content
+								.name Mike
+								.career Designer
+							.operation
+								a.follow-btn +
+						li.person
+							.aside
+								image.avatar(src="../build/img/avatar.jpg")
+							.content
+								.name Chris Sponner
+								.career Designer Blogger
+							.operation
+								a.follow-btn +
+						li.person
+							.aside
+								image.avatar(src="../build/img/avatar.jpg")
+							.content
+								.name Chris Sponner
+								.career Designer Blogger
+							.operation
+								a.follow-btn +
+				
