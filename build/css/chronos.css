@@ -1,8 +1,103 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
 html body {
   height: 100%;
 }
 body {
   background: -webkit-linear-gradient(top, #485d68, #848382, #485d68);
+  background: -moz-linear-gradient(top, #485d68, #848382, #485d68);
+  background: -o-linear-gradient(top, #485d68, #848382, #485d68);
+  background: -ms-linear-gradient(top, #485d68, #848382, #485d68);
+  background: linear-gradient(to bottom, #485d68, #848382, #485d68);
   font-family: "Helvetica Neue", arial, sans-serif;
   font-weight: 200;
 }
@@ -16,6 +111,7 @@ button {
   font-weight: 500;
   background-color: #fff;
   border: 2px solid #f37c5f;
+  -webkit-border-radius: 15px;
   border-radius: 15px;
 }
 .heart:before {
@@ -27,11 +123,20 @@ button {
   height: 16px;
   background: #e64c65;
 /* assign a nice red color */
+  -webkit-border-radius: 50px 50px 0 0;
   border-radius: 50px 50px 0 0;
 /* make the top edge round */
   -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 /* 45 degrees rotation counter clockwise */
   -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -o-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  transform-origin: 0 100%;
 /* Rotate it around the bottom-left corner */
 }
 .heart:after {
@@ -42,16 +147,26 @@ button {
   height: 16;
   background: #e64c65;
 /* assign a nice red color */
+  -webkit-border-radius: 50px 50px 0 0;
   border-radius: 50px 50px 0 0;
 /* make the top edge round */
   -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 /* rotating 45 degrees clockwise */
   -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
 /* rotation is around bottom-right corner this time */
 }
 .cycle {
   width: 14px;
   height: 14px;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
 }
 .cycle-red {
@@ -67,6 +182,7 @@ button {
   border: 2px solid #24c4bc;
 }
 .avatar {
+  -webkit-border-radius: 22px;
   border-radius: 22px;
   width: 36px;
   height: 36px;
@@ -74,7 +190,9 @@ button {
 .container {
   width: 80%;
   margin: 80px auto;
+  -webkit-border-radius: 8px;
   border-radius: 8px;
+  -webkit-box-shadow: rgba(88,88,88,0.8) 0 0 10px;
   box-shadow: rgba(88,88,88,0.8) 0 0 10px;
 }
 .nav {
@@ -120,6 +238,10 @@ button {
   position: relative;
   height: 450px;
   background: -webkit-linear-gradient(left, #485d68, #848382);
+  background: -moz-linear-gradient(left, #485d68, #848382);
+  background: -o-linear-gradient(left, #485d68, #848382);
+  background: -ms-linear-gradient(left, #485d68, #848382);
+  background: linear-gradient(to right, #485d68, #848382);
 }
 .post .mask-area {
   position: absolute;
@@ -167,6 +289,8 @@ button {
   letter-spacing: 4px;
   line-height: 40px;
   opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
 }
 .post .featured .feature-list {
   font-size: 14px;
@@ -175,10 +299,14 @@ button {
 }
 .post .featured .feature-list .feature {
   opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
   margin: 12px 0px;
 }
 .post .featured .feature-list .active {
   opacity: 1;
+  -ms-filter: none;
+  filter: none;
   font-weight: 200;
 }
 .post .message-box {
@@ -188,7 +316,9 @@ button {
   top: 26px;
   right: 200px;
   background-color: #fff;
+  -webkit-border-radius: 10px;
   border-radius: 10px;
+  -webkit-box-shadow: rgba(80,80,80,0.5) 0 0 10px;
   box-shadow: rgba(80,80,80,0.5) 0 0 10px;
 }
 .post .message-box .angle {
@@ -200,6 +330,10 @@ button {
   background: #fff;
 /* assign a nice red color */
   -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 /* rotating 45 degrees clockwise */
 }
 .post .message-box .nav-area {
@@ -225,6 +359,7 @@ button {
 .post .message-box .messages .message .avatar {
   float: left;
   background-color: #999;
+  -webkit-border-radius: 28px;
   border-radius: 28px;
   width: 48px;
   height: 48px;
@@ -286,12 +421,18 @@ button {
 }
 .content .board .cards .card {
   background: -webkit-linear-gradient(top, #485d68, #848382);
+  background: -moz-linear-gradient(top, #485d68, #848382);
+  background: -o-linear-gradient(top, #485d68, #848382);
+  background: -ms-linear-gradient(top, #485d68, #848382);
+  background: linear-gradient(to bottom, #485d68, #848382);
   margin: 1.6%;
   width: 30%;
   height: 240px;
   background-color: #fff;
   float: left;
+  -webkit-border-radius: 5px;
   border-radius: 5px;
+  -webkit-box-shadow: rgba(180,180,180,0.8) 0 0 10px;
   box-shadow: rgba(180,180,180,0.8) 0 0 10px;
   position: relative;
 }
@@ -329,6 +470,8 @@ button {
   height: 90px;
   background-color: #111;
   opacity: 0.9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  filter: alpha(opacity=90);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
@@ -346,6 +489,7 @@ button {
   height: 46px;
   font-size: 16px;
   font-weight: 100;
+  -webkit-border-radius: 30px;
   border-radius: 30px;
   color: #fff;
 }
@@ -356,6 +500,7 @@ button {
   line-height: 26px;
   height: 26px;
   font-size: 12px;
+  -webkit-border-radius: 18px;
   border-radius: 18px;
 }
 .content .board .panel .pot .pot-small {
@@ -364,6 +509,7 @@ button {
   border: 2px solid #404c51;
   line-height: 10px;
   height: 8px;
+  -webkit-border-radius: 6px;
   border-radius: 6px;
 }
 .content .board .panel .pot .pot-big {
@@ -373,5 +519,6 @@ button {
   line-height: 35px;
   height: 40px;
   font-size: 26px;
+  -webkit-border-radius: 24px;
   border-radius: 24px;
 }

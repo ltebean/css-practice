@@ -1,8 +1,10 @@
+global-reset()
+
 html body
 	height:100%
 
 body
-	background -webkit-linear-gradient(top, #485d68 ,#848382,#485d68)
+	background linear-gradient(top, #485d68 ,#848382,#485d68)
 	font-family: "Helvetica Neue", arial, sans-serif
 	font-weight:200
 
@@ -27,8 +29,8 @@ button
 	height: 16px; 
 	background: #e64c65; /* assign a nice red color */
 	border-radius: 50px 50px 0 0; /* make the top edge round */ 
-	-webkit-transform: rotate(-45deg); /* 45 degrees rotation counter clockwise */
-	-webkit-transform-origin: 0 100%; /* Rotate it around the bottom-left corner */
+	transform: rotate(-45deg); /* 45 degrees rotation counter clockwise */
+	transform-origin: 0 100%; /* Rotate it around the bottom-left corner */
 
 .heart:after
 	position: absolute; 
@@ -38,9 +40,8 @@ button
 	height: 16; 
 	background: #e64c65; /* assign a nice red color */
 	border-radius: 50px 50px 0 0; /* make the top edge round */ 
-	-webkit-transform: rotate(45deg); /* rotating 45 degrees clockwise */
-	-webkit-transform-origin: 100% 100%; /* rotation is around bottom-right corner this time */
-
+	transform: rotate(45deg); /* rotating 45 degrees clockwise */
+	transform-origin: 100% 100%; /* rotation is around bottom-right corner this time */
 
 .cycle
 	width:14px
@@ -101,7 +102,7 @@ button
 .post
 	position:relative
 	height:450px
-	background -webkit-linear-gradient(left, #485d68 ,#848382)
+	background linear-gradient(left, #485d68 ,#848382)
 	.mask-area
 		position:absolute
 		top:50px
@@ -169,7 +170,7 @@ button
 			width: 16px; 
 			height: 16px; 
 			background: #ffffff; /* assign a nice red color */
-			-webkit-transform: rotate(45deg); /* rotating 45 degrees clockwise */
+			transform: rotate(45deg); /* rotating 45 degrees clockwise */
 		.nav-area
 			height:50px
 			border-bottom:1px solid #e0e6e7
@@ -241,7 +242,7 @@ button
 			padding:18px
 			overflow:scroll
 			.card
-				background -webkit-linear-gradient(top, #485d68 ,#848382)
+				background linear-gradient(top, #485d68 ,#848382)
 				margin:1.6%
 				width:30%
 				height:240px
