@@ -171,12 +171,37 @@ li {
   font-weight: 100;
   padding: 0px 20px;
 }
-section {
-  display: table-cell;
-  vertical-align: top;
+@media (min-width: 600px) {
+  section {
+    display: block;
+    width: 100%;
+  }
+  section.left {
+    width: 100%;
+  }
+  section.main {
+    width: 100%;
+  }
+  section.right {
+    width: 100%;
+  }
+}
+@media (min-width: 800px) {
+  section {
+    display: table-cell;
+    vertical-align: top;
+  }
+  section.left {
+    width: 21%;
+  }
+  section.main {
+    width: 58%;
+  }
+  section.right {
+    width: 21%;
+  }
 }
 section.left {
-  width: 21%;
   background-color: #80a8cc;
   text-align: center;
   color: #fff;
@@ -216,19 +241,17 @@ section.left .profile .follow-btn {
   height: 40px;
   line-height: 40px;
 }
-section.left .pics {
-  margin-bottom: 100px;
-}
 section.left .pics img {
   width: 100%;
 }
 section.main {
-  width: 58%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #f2eee8;
+  padding: 36px;
 }
 section.main .tabs {
-  cursor: pointer;
-  margin: 36px;
   background-color: #fffbf5;
   text-align: center;
   height: 80px;
@@ -236,6 +259,7 @@ section.main .tabs {
   box-shadow: 0 2px 6px 0px rgba(154,154,154,0.29);
 }
 section.main .tabs .tab {
+  cursor: pointer;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -257,7 +281,7 @@ section.main .tabs .active {
 }
 section.main .tweets {
   background-color: #fffbf5;
-  margin: 0px 36px 36px 36px;
+  margin-top: 36px;
   -webkit-box-shadow: 0 2px 6px 0px rgba(154,154,154,0.29);
   box-shadow: 0 2px 6px 0px rgba(154,154,154,0.29);
 }
@@ -298,7 +322,6 @@ section.main .tweets .tweet .content .pic img {
   width: 100%;
 }
 section.right {
-  width: 21%;
   background-color: #fffbf5;
 }
 section.right .section,

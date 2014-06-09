@@ -18,9 +18,6 @@ li
 	background-color:#ffffff	
 	cursor:pointer
 
-left_width=21%
-main_width=58%
-right_width=21%
 
 .wrap
 	margin:5%
@@ -72,12 +69,33 @@ right_width=21%
 		padding:0px 20px
 
 
-section
-	display:table-cell
-	vertical-align:top
+left_width=21%
+main_width=58%
+right_width=21%
+
+@media (min-width: 600px)
+	section
+		display:block
+		width: 100%
+	section.left
+		width:100%
+	section.main
+		width:100%
+	section.right
+		width:100%
+
+@media (min-width: 800px)
+	section
+		display:table-cell
+		vertical-align:top
+	section.left
+		width:left_width
+	section.main
+		width:main_width
+	section.right
+		width:right_width
 
 section.left
-	width:left_width
 	background-color:#80a8cc
 	text-align:center
 	color:#ffffff
@@ -109,21 +127,20 @@ section.left
 			height:40px
 			line-height:40px
 	.pics 
-		margin-bottom:100px
 		img
 			width:100%
 
 section.main
-	width:main_width
+	box-sizing:border-box
 	background-color:#f2eee8
+	padding:36px
 	.tabs
-		cursor:pointer
-		margin:36px
 		background-color:#fffbf5
 		text-align:center
 		height:80px
 		box-shadow: 0 2px 6px 0px rgba(154, 154, 154, 0.29)
 		.tab
+			cursor:pointer
 			box-sizing:border-box
 			display:inline-block
 			height:100%
@@ -139,7 +156,7 @@ section.main
 			border-bottom:5px solid #80a8cc
 	.tweets
 		background-color:#fffbf5
-		margin:0px 36px 36px 36px
+		margin-top:36px
 		box-shadow: 0 2px 6px 0px rgba(154, 154, 154, 0.29)
 		.tweet
 			letter-spacing:1px
@@ -169,7 +186,6 @@ section.main
 					img
 						width:100%
 section.right
-	width:right_width
 	background-color:#fffbf5
 	.section
 		padding:30px 30px
