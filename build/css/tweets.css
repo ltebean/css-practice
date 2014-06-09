@@ -167,11 +167,14 @@ li {
   right: 20px;
   top: 20px;
   color: #e3dfd8;
-  font-size: 15px;
+  font-size: 0.75rem;
   font-weight: 100;
   padding: 0px 20px;
 }
-@media (min-width: 600px) {
+@media (min-width: 700px) {
+  html {
+    font-size: 26px;
+  }
   section {
     display: block;
     width: 100%;
@@ -186,7 +189,10 @@ li {
     width: 100%;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
+  html {
+    font-size: 20px;
+  }
   section {
     display: table-cell;
     vertical-align: top;
@@ -219,19 +225,21 @@ section.left .profile .avatar {
   border-radius: 50%;
 }
 section.left .profile .name {
-  font-size: 19px;
+  font-size: 0.95rem;
   font-weight: 200;
 }
 section.left .profile .intro {
   margin: 16px 0px;
-  font-size: 16px;
+  font-size: 0.8rem;
   line-height: 1.3;
 }
 section.left .profile .website {
+  font-size: 0.7rem;
   display: block;
   margin-top: 30px;
 }
 section.left .profile .follow-btn {
+  font-size: 0.8rem;
   margin: 30px auto;
   display: block;
   width: 160px;
@@ -266,7 +274,7 @@ section.main .tabs .tab {
   display: inline-block;
   height: 100%;
   width: 25%;
-  font-size: 14px;
+  font-size: 0.7rem;
 }
 section.main .tabs .tab .title {
   margin-top: 24px;
@@ -301,7 +309,7 @@ section.main .tweets .tweet .content {
   padding-right: 10px;
   display: table-cell;
   vertical-align: top;
-  font-size: 15px;
+  font-size: 0.75rem;
 }
 section.main .tweets .tweet .content .head .name {
   font-weight: 300;
@@ -312,6 +320,7 @@ section.main .tweets .tweet .content .head .at {
 }
 section.main .tweets .tweet .content .txt {
   margin-top: 6px;
+  font-size: 1em;
   line-height: 1.4;
   letter-spacing: 1px;
 }
@@ -333,11 +342,11 @@ section.right .section .title,
 section.right .trends-area .title,
 section.right .who-to-follow .title {
   color: #605e58;
-  font-size: 16px;
+  font-size: 0.8rem;
   margin-bottom: 10px;
 }
 section.right .trends-area .trend {
-  font-size: 16px;
+  font-size: 0.8rem;
   color: #80a8cc;
   padding: 3px 0px;
   margin: 0px;
@@ -358,7 +367,7 @@ section.right .who-to-follow .person .content {
   padding-left: 10px;
   display: table-cell;
   vertical-align: top;
-  font-size: 14px;
+  font-size: 0.7rem;
 }
 section.right .who-to-follow .person .content .name {
   margin: 4px 0px;
