@@ -1,0 +1,22 @@
+extends layout/default.jade
+
+block head  
+	title css practice
+	+css("./build/css/index.css")
+	
+block content  
+	.container
+		nav.nav ltebean's css practice gallary
+		section.board
+			.card
+				.title Chronos
+				a.pic(target="_blank" href="./build/chronos.html")
+					img(src="./pic/chronos.png")
+			.card
+				.title Tweets
+				a.pic(target="_blank" href="./build/tweets.html")
+					img(src="./pic/tweets.png")
+			.card
+				.title HolidayPixels
+				a.pic(target="_blank" href="./build/tweets.html")
+					img(src="./pic/HolidayPixels.jpg")

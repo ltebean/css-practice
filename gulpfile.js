@@ -22,6 +22,10 @@ gulp.task('jade', function() {
 		.pipe(jade())
 		.pipe(gulp.dest("./build/"));
 
+	gulp.src(["./dev/views/index.jade"])
+		.pipe(jade())
+		.pipe(gulp.dest("./"));
+
 });
 
 
