@@ -1,0 +1,49 @@
+extends layout/default.jade
+
+block head  
+	title holiday pixels
+	+css("./css/holidayPixels.css")
+	
+block content  
+	img.bg(src="./img/bg.jpg")
+	.container
+		seciotn.aside-panel-bg
+		seciotn.aside-panel-overlay
+			.body
+				img(src="./img/map.jpg")
+		section.main-panel-bg
+		section.main-panel-overlay
+			.head
+				.step
+					.btn-green.btn x
+					.txt Choose your travel destination
+				.step
+					.btn x
+					.txt Choose your travel destination
+				.step
+					.btn x
+					.txt Choose your travel destination
+			.body
+				.angle
+				.title-area
+					.title-placeholder
+					.title Switherland
+					.content Type you destination or Switch to map view
+				.destinations
+					.destination
+						.pic
+							image(src="../build/img/avatar.jpg")
+						.name Zurich
+						.percent 50,4%
+					.destination.active
+						.pic
+							image(src="../build/img/avatar.jpg")
+						.name Barsel
+						.percent 75,8%
+					.destination
+						.pic
+							image(src="../build/img/avatar.jpg")
+						.name Barne
+						.percent 32,6%
+			.foot
+
