@@ -1,0 +1,70 @@
+extends layout/default.jade
+
+block head  
+	title css practice
+	+css("./css/portraitGallery.css")
+	
+block content
+	nav.nav
+		.tabs
+			a.tab.active HOME
+			a.tab HOW IT WORKS
+			a.tab DEMO
+			a.tab BLOG
+			a.tab FEATURES
+			a.tab CONTACT
+	section.container
+		.board
+			.card
+				.head
+					.angle
+					.title ORANGE TREE
+					.identity IDENTITY
+				.body
+					img(src="./img/gallery1.jpg")
+			.card
+				.head
+					.angle
+					.title ORANGE TREE
+					.identity IDENTITY
+				.body 
+					img(src="./img/gallery2.jpg")
+			.card
+				.head
+					.angle
+					.title ORANGE TREE
+					.identity IDENTITY
+				.body
+					img(src="./img/gallery3.jpg")
+			.card
+				.head
+					.angle
+					.title ORANGE TREE
+					.identity IDENTITY
+				.body
+					img(src="./img/gallery2.jpg")
+			.card
+				.head
+					.angle
+					.title ORANGE TREE
+					.identity IDENTITY
+				.body
+					img(src="./img/gallery1.jpg")
+			.card
+				.head
+					.angle
+					.title ORANGE TREE
+					.identity IDENTITY
+				.body
+					img(src="./img/gallery2.jpg")
+		.aside
+			.card-mini GREEN DOMIMUNI
+			.card-mini VOLKSWA
+			.card-mini TYPOGRAPHT
+			.card
+				.head
+					.angle
+					.title ORANGE TREE
+					.identity IDENTITY
+				.body
+					img(src="./img/gallery1.jpg")

@@ -177,12 +177,15 @@ img.bg {
   color: #a0a9ba;
 }
 .main-panel-overlay .head .step .btn {
+  margin-left: auto;
+  margin-right: auto;
   line-height: 32px;
   width: 36px;
   height: 36px;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  margin: 46px auto 10px auto;
+  margin-top: 46px;
+  margin-bottom: 10px;
   border: 1px solid #a0a9ba;
   font-weight: 500;
 }
@@ -209,19 +212,18 @@ img.bg {
   box-shadow: 1px 0px 1px 0px #ccc;
 }
 .main-panel-overlay .body .angle {
-  position: absolute;
-  left: 14%;
-  top: -7px;
   width: 14px;
   height: 14px;
-  background: #fff;
-/* assign a nice red color */
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-/* rotating 45 degrees clockwise */
+  position: absolute;
+  left: 14%;
+  top: -7px;
+  background: #fff;
+/* assign a nice red color */
 }
 .main-panel-overlay .body .title-area {
   height: 35%;
