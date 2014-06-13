@@ -14,6 +14,18 @@ body
 	background-color:#78c960
 	color:#ffffff
 	border:none
+	box-shadow:0px 1px 2px 0px rgba(88,88,88,0.6)
+
+.btn-download
+	background-color:#e45b37
+	color:#ffffff
+	border-radius:5px
+	position:absolute
+	width:60px
+	height:60px
+	left:-24px
+	top:40px
+	box-shadow:0px 0px 7px 0px rgba(88,88,88,0.6)
 
 img.bg
 	position:fixed
@@ -25,10 +37,10 @@ img.bg
 
 .container
 	width:1000px
-	height:90%
+	height:700px
 	margin-left:auto
 	margin-right:auto
-	padding:2.5% 0px
+	padding-top:50px
 	position:relative
 
 .main-panel
@@ -48,7 +60,8 @@ img.bg
 	@extend .main-panel
 	box-shadow:0px 0px 6px 0px #999999
 	.head
-		height:25%
+		position:absolute
+		height:160px
 		clearfix()
 		.step
 			float:left
@@ -60,7 +73,7 @@ img.bg
 				width:36px
 				height:36px
 				border-radius:50%
-				margin:50px auto 10px auto
+				margin:46px auto 10px auto
 				border:1px solid #A0A9BA
 				font-weight:500
 			.btn-green
@@ -69,6 +82,8 @@ img.bg
 				padding:5px 10px
 				font-size:10px
 				letter-spacing:1px
+			.active
+				color:#ffffff
 	.body
 		background-color:#ffffff
 		height:60%
@@ -88,18 +103,16 @@ img.bg
 			transform: rotate(45deg); /* rotating 45 degrees clockwise */
 		.title-area
 			height:35%
-			.title-placeholder
-				height:35%
 			.title
 				text-align:center
 				font-size:18px
 				width:100%
-				height:30%
+				padding-top:50px
 			.content
+				padding-top:25px
 				text-align:center
 				font-size:8px
 				width:100%
-				height:30%
 				color:#c9c7c8
 				letter-spacing:1px
 		.destinations
@@ -115,22 +128,65 @@ img.bg
 				color:#a5a5a5
 				text-align:center
 				.pic
-					padding:33% 20% 20% 20%
-					height:68%
+					width:100px
+					height:100px
+					margin-left:auto
+					margin-right:auto
+					margin-top:50px
 					img
 						width:100%
+						height:100%
 						border-radius:50%
 				.name
-					height:11%
+					margin-top:30px
 					font-size:18px
 				.percent
-					height:21%
+					margin-top:10px
 					font-size:20px
 			.active
 				color:#000000
-
 	.foot
-		height:15%
+		position:absolute
+		height:150px
+		bottom:0px
+		width:100%
+		text-align:center
+		letter-spacing:1px
+		.info
+			position:absolute
+			font-size:12px
+			color:#ffffff
+			bottom:82px
+			opacity:0.6
+			left:26px
+		.btn
+			font-size:12px
+			width:80px
+			height:32px
+			line-height:32px
+			border-radius:3px
+			position:absolute
+			color:#ffffff
+			opacity:0.9
+			cursor:pointer
+			box-shadow: 1px 1px 5px 0px #555555
+		.btn-pre
+			@extend .main-panel-overlay .foot .btn
+			bottom:72px
+			right:130px
+		.btn-next
+			@extend .main-panel-overlay .foot .btn
+			bottom:72px
+			right:30px
+		.copyright
+			opacity:0.7
+			bottom:0px
+			position:absolute
+			color:#eeeeee
+			width:100%
+			padding:20px 0px
+			border-top:1px solid #aaaaaa
+			font-size:10px
 
 .aside-panel
 	border-top-left-radius:8px
