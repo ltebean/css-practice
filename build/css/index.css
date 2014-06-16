@@ -153,7 +153,7 @@ body {
 }
 .board .card .pic {
   display: block;
-  height: 320;
+  height: 300;
   padding: 5% 0;
   cursor: pointer;
 }

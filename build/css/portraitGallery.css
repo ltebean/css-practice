@@ -160,7 +160,7 @@ body {
 }
 .board .card {
   width: 30.3%;
-  height: 360px;
+  height: 400px;
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 5px 0px #666;
   box-shadow: 0px 0px 5px 0px #666;
@@ -196,7 +196,7 @@ body {
 }
 .board .card .body {
   background-color: #fafafa;
-  height: 310px;
+  height: 350px;
 }
 .board .card .body img {
   width: 100%;
@@ -218,7 +218,7 @@ body {
 }
 .aside .card {
   width: 90%;
-  height: 360px;
+  height: 400px;
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 5px 0px #666;
   box-shadow: 0px 0px 5px 0px #666;
@@ -254,7 +254,7 @@ body {
 }
 .aside .card .body {
   background-color: #fafafa;
-  height: 310px;
+  height: 350px;
 }
 .aside .card .body img {
   width: 100%;
