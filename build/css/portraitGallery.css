@@ -102,7 +102,7 @@ body {
   background: linear-gradient(to top right, #183c54, #c8d4ca);
   font-family: "Helvetica Neue", arial, sans-serif;
   font-weight: 100;
-  width: 1200px;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -159,13 +159,13 @@ body {
   width: 75%;
 }
 .board .card {
-  width: 30.3%;
-  height: 400px;
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 5px 0px #666;
   box-shadow: 0px 0px 5px 0px #666;
   float: left;
+  width: 30.3%;
   margin: 1.5%;
+  padding-bottom: 0%;
 }
 .board .card .head {
   height: 50px;
@@ -196,11 +196,9 @@ body {
 }
 .board .card .body {
   background-color: #fafafa;
-  height: 350px;
 }
 .board .card .body img {
   width: 100%;
-  height: 100%;
 }
 .aside {
   float: left;
@@ -217,12 +215,11 @@ body {
   box-shadow: 0px 0px 5px 0px #666;
 }
 .aside .card {
-  width: 90%;
-  height: 400px;
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 5px 0px #666;
   box-shadow: 0px 0px 5px 0px #666;
   float: left;
+  width: 90%;
   margin: 4.5%;
 }
 .aside .card .head {
@@ -254,9 +251,7 @@ body {
 }
 .aside .card .body {
   background-color: #fafafa;
-  height: 350px;
 }
 .aside .card .body img {
   width: 100%;
-  height: 100%;
 }
