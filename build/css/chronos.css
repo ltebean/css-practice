@@ -427,7 +427,6 @@ button {
   background: linear-gradient(to bottom, #485d68, #848382);
   margin: 1.6%;
   width: 30%;
-  height: 240px;
   background-color: #fff;
   float: left;
   -webkit-border-radius: 5px;
@@ -435,29 +434,33 @@ button {
   -webkit-box-shadow: rgba(180,180,180,0.8) 0 0 10px;
   box-shadow: rgba(180,180,180,0.8) 0 0 10px;
   position: relative;
+  padding-bottom: 20%;
 }
 .content .board .cards .card .like-area {
   position: absolute;
-  top: 30px;
-  left: 26px;
+  top: 10%;
+  left: 10%;
 }
 .content .board .cards .card .like-area .heart {
-  zoom: 0.9;
+  zoom: 1;
 }
 .content .board .cards .card .like-area .like-count {
   margin-left: 30px;
   color: #e8e9ec;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 100;
-  line-height: 14px;
+  line-height: 16px;
 }
 .content .board .cards .card .cycle {
   position: absolute;
-  top: 30px;
-  right: 20px;
+  top: 10%;
+  right: 10%;
 }
 .content .board .cards .card .txt {
-  margin: 76px 26px 30px 26px;
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  top: 40%;
   font-size: 20px;
   color: #e8e9ec;
   letter-spacing: 1px;
